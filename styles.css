@@ -63,3 +63,25 @@ footer {
     gap: 0.5rem;
   }
 }
+
+/* Call to Action Button */
+.cta-button {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  margin-top: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6c200;
+}
+
+.cta-button:focus {
+  outline: 3px solid #333;
+  outline-offset: 3px;
+}

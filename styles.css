@@ -1,22 +1,65 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
+  font-size: 16px;
   margin: 0;
   line-height: 1.6;
+  background-color: #ffffff;
+  color: #222;
 }
 
+/* Header */
 header {
-  background: #333;
-  color: white;
+  background-color: #333;
+  color: #ffffff;
   padding: 1rem;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
-  color: white;
+  color: #ffd700;
   text-decoration: none;
+  font-weight: bold;
+}
+
+/* Better accessibility: keyboard focus */
+nav a:focus {
+  outline: 3px solid #ffd700;
+  outline-offset: 3px;
+  text-decoration: underline;
+}
+
+/* Hover effect for usability */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content spacing */
+main {
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

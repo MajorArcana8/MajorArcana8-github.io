@@ -45,35 +45,36 @@
 
 <section class="contact-section">
 
-<form>
+<form id="contactForm">
 
-<label for="name">Full Name</label>
-<input type="text"
-       id="name"
-       name="name"
-       placeholder="Your Name"
-       required>
+    <label for="name">Full Name</label>
+    <input type="text"
+           id="name"
+           name="name"
+           required>
 
-<label for="email">Email Address</label>
-<input type="email"
-       id="email"
-       name="email"
-       placeholder="you@example.com"
-       required>
+    <label for="email">Email Address</label>
+    <input type="email"
+           id="email"
+           name="email"
+           required>
 
-<label for="message">Message</label>
+    <label for="message">Message</label>
+    <textarea id="message"
+              name="message"
+              rows="6"
+              required></textarea>
 
-<textarea id="message"
-          name="message"
-          rows="6"
-          placeholder="Tell us about the arrangement or craft you're looking for..."
-          required></textarea>
+    <button type="submit" class="cta-button">
+        Send Message
+    </button>
 
-    <input type="submit" value="Send Message" class="cta-button">
-
-<p id="successMessage" class="success-message">
-    Thank you! Your message has been sent successfully. We will contact you soon.
-</p>
+    <p id="successMessage"
+       class="success-message"
+       role="status"
+       hidden>
+        Thank you! Your message was submitted successfully.
+    </p>
 
 </form>
 
@@ -85,17 +86,14 @@
     <p>&copy; 2026 Zachary Barling</p>
 </footer>
 <script>
-const form = document.getElementById("contactForm");
-const success = document.getElementById("successMessage");
+const contactForm = document.getElementById("contactForm");
+const successMessage = document.getElementById("successMessage");
 
-success.style.display = "none";
-
-form.addEventListener("submit", function(event) {
+contactForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    success.style.display = "block";
-
-    form.reset();
+    successMessage.hidden = false;
+    contactForm.reset();
 });
 </script>
 </body>

@@ -234,12 +234,12 @@ h2 {
     border-radius: 9px;
 }
 
-.gallery-item figcaption {
-    margin-top: 14px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.05rem;
-    color: #4f3b32;
+.gallery-item figcaption span {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: #665c55;
 }
 
 /* Centers the fifth gallery item */

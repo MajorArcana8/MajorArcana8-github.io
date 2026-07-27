@@ -309,6 +309,45 @@ h2 {
 }
 
 /* =========================
+   Contact Page
+   ========================= */
+
+.contact-section {
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(79,59,50,.12);
+}
+
+.contact-section label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-section textarea {
+    resize: vertical;
+}
+
+.contact-section input[type="submit"] {
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+}
+/* =========================
    Footer
    ========================= */
 

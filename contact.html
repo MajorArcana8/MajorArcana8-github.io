@@ -1,30 +1,88 @@
-<nav aria-label="Main navigation">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</nav>
-<h2>Contact Us</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>
-Interested in a custom craft or have questions?
-Fill out the form below or email us for more information.
-</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Poison Water Crafts for custom floral arrangements, handmade crafts, and personalized creations.">
+
+    <title>Contact Us | Poison Water Crafts</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Poison Water Crafts</h1>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        Interested in a custom floral arrangement or handmade craft?
+        We'd love to hear from you. Fill out the form below and we'll
+        get back to you as soon as possible.
+    </p>
+
+</section>
+
+<section class="contact-section">
 
 <form>
 
-<label for="name">Name</label><br>
-<input type="text" id="name"><br><br>
+<label for="name">Full Name</label>
+<input type="text"
+       id="name"
+       name="name"
+       placeholder="Your Name"
+       required>
 
-<label for="email">Email</label><br>
-<input type="email" id="email"><br><br>
+<label for="email">Email Address</label>
+<input type="email"
+       id="email"
+       name="email"
+       placeholder="you@example.com"
+       required>
 
-<label for="message">Message</label><br>
-<textarea id="message"></textarea><br><br>
+<label for="message">Message</label>
 
-<input type="submit" value="Send">
+<textarea id="message"
+          name="message"
+          rows="6"
+          placeholder="Tell us about the arrangement or craft you're looking for..."
+          required></textarea>
+
+<input type="submit"
+       value="Send Message"
+       class="cta-button">
 
 </form>
+
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Zachary Barling</p>
+</footer>
+
+</body>
+
+</html>

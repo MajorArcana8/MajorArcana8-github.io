@@ -357,6 +357,29 @@ tbody tr:nth-child(even) {
 tbody th {
     color: #6d3f3f;
 }
+.external-resources {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(79, 59, 50, 0.12);
+}
+
+.external-resources li {
+    margin-bottom: 12px;
+}
+
+.external-resources a {
+    color: #7a3f29;
+    font-weight: bold;
+}
+
+.external-resources a:hover,
+.external-resources a:focus {
+    color: #4f3b32;
+    text-decoration-thickness: 2px;
+}
 
 /* =========================
    Contact Page

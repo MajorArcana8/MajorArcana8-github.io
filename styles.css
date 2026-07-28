@@ -248,6 +248,69 @@ h2 {
     width: calc(50% - 14px);
     justify-self: center;
 }
+.gallery-instructions {
+    text-align: center;
+}
+
+.gallery-table-container {
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+.gallery-table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+}
+
+.gallery-table caption {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #2f2a26;
+}
+
+.gallery-table th,
+.gallery-table td {
+    padding: 16px;
+    border: 1px solid #b9a99d;
+    vertical-align: middle;
+}
+
+.gallery-table thead {
+    background-color: #4f3b32;
+    color: white;
+}
+
+.gallery-table tbody tr:nth-child(even) {
+    background-color: #fff4e5;
+}
+
+.gallery-table tbody th {
+    color: #6d3f3f;
+}
+
+.gallery-thumbnail {
+    display: block;
+    width: 140px;
+    height: 110px;
+    object-fit: cover;
+    border: 3px solid #ead9c6;
+    border-radius: 8px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.gallery-thumbnail:hover {
+    transform: scale(1.06);
+    box-shadow: 0 5px 14px rgba(79, 59, 50, 0.25);
+}
+
+.gallery-table a:focus {
+    display: inline-block;
+    outline: 3px solid #6d3f3f;
+    outline-offset: 4px;
+}
 
 /* =========================
    Products Page

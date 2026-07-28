@@ -434,6 +434,32 @@ tbody th {
 .success-message[hidden] {
     display: none;
 }
+
+/* ======================
+   Links
+   ======================
+.page-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+}
+
+.page-content p {
+    margin-bottom: 15px;
+}
+
+.page-content a {
+    color: #7a3f29;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page-content a:hover {
+    text-decoration: underline;
+}
+
 /* =========================
    Footer
    ========================= */

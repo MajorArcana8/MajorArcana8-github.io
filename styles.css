@@ -392,13 +392,24 @@ h2 {
 }
 
 .contact-section input,
+.contact-section select,
 .contact-section textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #cccccc;
     border-radius: 8px;
+    background-color: white;
+    color: #2f2a26;
     font-size: 16px;
     font-family: inherit;
+}
+
+.contact-section input:focus,
+.contact-section select:focus,
+.contact-section textarea:focus {
+    outline: 3px solid #d9a441;
+    outline-offset: 2px;
+    border-color: #6d3f3f;
 }
 
 .contact-section textarea {

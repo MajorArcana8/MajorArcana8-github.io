@@ -41,22 +41,42 @@ header h1 {
     font-size: 2.4rem;
     letter-spacing: 1px;
 }
+/* Header Layout */
+
 .header-grid {
     display: grid;
     grid-template-columns: 120px 1fr;
     align-items: center;
     gap: 20px;
-    max-width: 1000px;
-    margin: 20px auto 0;
+    max-width: 1100px;
+    margin: 20px auto;
 }
 
-.logo img {
-    width: 110px;
+.logo {
+    text-align: center;
+}
+
+.logo-image {
+    width: 100px;
     height: auto;
-    display: block;
-    margin: auto;
+    transition: transform .3s;
 }
 
+.logo-image:hover {
+    transform: scale(1.08);
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 /* =========================
    Navigation
    ========================= */
